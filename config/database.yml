@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: share-images_development
+  port: 5432
+  pool: 5
+  username: postgres
+  password: postgres
+  schema_search_path: public
+  host: localhost
+
+test:
+  <<: *default
+  database: share-images_test
+
+production:
+  <<: *default
+  database: share-images_production
+  username: share-images
+  password: <%= ENV['SHARE-IMAGES_DATABASE_PASSWORD'] %>
