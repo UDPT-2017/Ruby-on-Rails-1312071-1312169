@@ -17,6 +17,7 @@ gem "jbuilder", "~> 2.5"
 gem "bootstrap-sass"
 gem "config"
 gem "i18n"
+gem "bcrypt", "3.1.11"
 
 group :development, :test do
   gem "byebug", platform: :mri
