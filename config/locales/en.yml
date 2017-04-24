@@ -2,10 +2,27 @@ en:
   home:
     index:
       hello: "Hello world"
+      title: "Home"
   layouts:
     footer:
       share_image: "Share image app"
     header:
       home: "Home"
       share_image_app: "Share image app"
+  users:
+    new:
+      btn_create: "Create"
+      title: "Sign up"
+      form_contains: "The form contains "
+      error: "error"
+      title: "Sign up"
+    create:
+      account_actived: "Account actived"
 
+  sessions:
+    new:
+      title: "Log in"
+      create_account: "Create new account "
+      sign_up: "Sign up"
+    create:
+      login_success: "Login successfully"
