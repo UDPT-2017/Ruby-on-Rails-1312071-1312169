@@ -1,4 +1,12 @@
 class UsersController < ApplicationController
+  before_action :logged_in_user, only: [:index, :edit, :update, :show]
+  before_action :load_user, only: [:show, :edit, :update]
+
+  def index
+    @users = User.select(:id, :name, :email).order(name: :asc)
+      .paginate page: params[:page], per_page: Settings.per_page
+  end
+
   def new
     @user = User.new
     if session[:errors] && session[:errors] == 0
@@ -6,6 +14,11 @@ class UsersController < ApplicationController
     else
       session[:errors] = 1
     end
+  end
+
+  def edit
+    session[:errors] = 1
+    session[:signuperrors] = {}
   end
 
   def create
@@ -18,6 +31,15 @@ class UsersController < ApplicationController
       session[:signuperrors] = @user.errors.full_messages
       session[:errors] = 0
       redirect_to signup_url
+    end
+  end
+
+  def update
+    if @user.update_attributes user_params
+      flash[:success] = t ".update_success"
+      redirect_to @user
+    else
+      render :edit
     end
   end
 
