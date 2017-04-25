@@ -1,6 +1,6 @@
 class EntriesController < ApplicationController
   before_action :logged_in_user, only: [:create, :new]
-  before_action :load_entry, only: [:destroy, :edit, :update]
+  before_action :load_entry, only: [:destroy, :edit, :update, :show]
 
   def new
     @entry = Entry.new
@@ -10,7 +10,11 @@ class EntriesController < ApplicationController
       session[:errors] = 1
     end
   end
-def create
+
+  def show
+  end
+
+  def create
     @entry = current_user.entries.build entry_params
     if @entry.save
       flash[:success] = t ".entry_created"
