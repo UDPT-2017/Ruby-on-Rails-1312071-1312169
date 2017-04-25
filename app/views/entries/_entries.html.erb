@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2" >
+  <div class="entries">
+    <% @entries.each do |entry| %>
+      <span class="user-info"><%= link_to gravatar_for(entry.user,
+       size: Settings.gravatar_follow), entry.user %></span>
+      <span class="user"><%= link_to entry.user.name, entry.user %></span>
+      <span class="timestamp">
+        <% if current_user? entry.user %>
+          <%= link_to t(".delete"), entry, method: :delete,
+            data: {confirm: t(".confirm_delete")} %>
+        <% end %>
+        <%= t ".posted" %>
+        <%= time_ago_in_words entry.created_at %>
+        <%= t ".ago" %>
+      </span>
+      <span class="content">
+        <%= entry.title %>
+        <%= image_tag entry.picture.url if entry.picture? %>
+      </span>
+    <% end %>
+    <%= will_paginate @entries %>
+    </div>
+  </div>
+</div>
