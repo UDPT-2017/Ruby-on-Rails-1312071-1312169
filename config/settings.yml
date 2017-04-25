@@ -1,3 +1,6 @@
 max_name_leng: 50
 max_email_leng: 50
 min_password_leng: 6
+per_page: 15
+gravatar_size: 80
+gravatar_params: 40
