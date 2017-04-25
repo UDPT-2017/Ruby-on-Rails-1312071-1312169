@@ -23,6 +23,8 @@ gem "bootstrap-will_paginate"
 gem "carrierwave"
 gem "mini_magick"
 gem "fog"
+gem "omniauth-facebook"
+gem "omniauth"
 
 group :development, :test do
   gem "byebug", platform: :mri

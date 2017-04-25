@@ -17,6 +17,19 @@ class User < ApplicationRecord
     update_attribute :remember_digest, nil
   end
 
+  def self.login_from_omniauth(auth)
+    find_by(uid: auth["uid"]) ||
+            create_member_from_omniauth(auth)
+  end
+
+  def self.create_member_from_omniauth(auth)
+    new(
+      provider: auth["provider"],
+      uid: auth["uid"],
+      name: auth["info"]["name"],
+      email: auth["info"]["email"])
+  end
+
   private
   def downcase_email
     email.downcase! if email
