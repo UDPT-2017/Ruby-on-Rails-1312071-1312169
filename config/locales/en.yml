@@ -37,3 +37,12 @@ en:
       sign_up: "Sign up"
     create:
       login_success: "Login successfully"
+
+  entries:
+    form:
+      enter_title: "Please enter title"
+    new:
+      btn_create: "Create"
+      title: "New entry"
+    create:
+      entry_created: "created entry"

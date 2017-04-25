@@ -20,6 +20,9 @@ gem "i18n"
 gem "bcrypt", "3.1.11"
 gem "will_paginate"
 gem "bootstrap-will_paginate"
+gem "carrierwave"
+gem "mini_magick"
+gem "fog"
 
 group :development, :test do
   gem "byebug", platform: :mri
