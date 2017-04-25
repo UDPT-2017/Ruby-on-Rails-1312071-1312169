@@ -1,6 +1,6 @@
 class EntriesController < ApplicationController
   before_action :logged_in_user, only: [:create, :new]
-
+  before_action :load_entry, only: [:destroy, :edit, :update]
 
   def new
     @entry = Entry.new
@@ -23,6 +23,15 @@ def create
     end
   end
 
+  def destroy
+    if @entry.destroy
+      flash[:success] = t ".entry_deleted"
+    else
+      flash[:danger] = t ".delete_failed"
+    end
+    redirect_to root_url
+  end
+
   private
   def entry_params
     params.require(:entry).permit :title, :picture
@@ -33,5 +42,9 @@ def create
       flash[:danger] = t ".log_in"
       redirect_to login_url
     end
+  end
+
+  def load_entry
+    @entry = Entry.find_by id: params[:id]
   end
 end
