@@ -46,14 +46,6 @@
                     </span>
                   <% end %>
                 <% end %>
-                <%= form_for entry.comments.build do |f| %>
-                <div class="field">
-                <%= f.hidden_field :id, value: entry.id %>
-                  <%= f.text_field :content, placeholder: t(".enter_comment"),
-                    class: "form-control" %>
-                </div>
-                <%= f.submit t(".create"), class: "btn btn-primary" %>
-              <% end %>
             </div>
           </div>
         </div>

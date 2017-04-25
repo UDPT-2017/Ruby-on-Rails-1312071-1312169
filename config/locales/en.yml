@@ -49,4 +49,5 @@ en:
     entries:
       comment: "Comment"
       confirm_delete: "Are you sure?"
-
+    destroy:
+      entry_deleted: "Deleted entry successfully"
