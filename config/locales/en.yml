@@ -46,3 +46,6 @@ en:
       title: "New entry"
     create:
       entry_created: "created entry"
+    entries:
+      comment: "Comment"
+      confirm_delete: "Are you sure?"
