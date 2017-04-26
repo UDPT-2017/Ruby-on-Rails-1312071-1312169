@@ -29,7 +29,10 @@ en:
       title: "All users"
     update:
       update_success: "Update successfully"
-
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
   sessions:
     new:
       title: "Log in"
@@ -37,6 +40,7 @@ en:
       sign_up: "Sign up"
     create:
       login_success: "Login successfully"
+      invalid: "Invalid email/password combination"
 
   entries:
     form:
@@ -51,3 +55,20 @@ en:
       confirm_delete: "Are you sure?"
     destroy:
       entry_deleted: "Deleted entry successfully"
+    client:
+      create: "Create"
+      enter_comment: "Enter..."
+      confirm_delete: "Are you sure?"
+    show:
+      title: "Entry"
+      create: "Create"
+      enter_comment: "Enter..."
+  follows:
+    unfollow:
+      unfollow: "Unfollow"
+    follow:
+      follow: "Follow"
+  comments:
+    create:
+      commented: "Comment successfully"
+      comment_failed: "Comment failed"
