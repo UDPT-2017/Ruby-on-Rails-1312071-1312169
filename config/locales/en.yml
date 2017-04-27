@@ -1,23 +1,74 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  home:
+    index:
+      hello: "Hello world"
+      title: "Home"
+      log_in: "Please log in."
+  layouts:
+    footer:
+      share_image: "Share image app"
+    header:
+      home: "Home"
+      share_image_app: "Share image app"
+      users: "Users"
+      edit: "Edit profile"
+  users:
+    new:
+      btn_create: "Create"
+      title: "Sign up"
+      form_contains: "The form contains "
+      error: "error"
+      title: "Sign up"
+    create:
+      account_actived: "Account actived"
+    edit:
+      btn_edit: "Save changes"
+      title: "Edit user"
+    index:
+      log_in: "Please log in."
+      title: "All users"
+    update:
+      update_success: "Update successfully"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+  sessions:
+    new:
+      title: "Log in"
+      create_account: "Create new account "
+      sign_up: "Sign up"
+    create:
+      login_success: "Login successfully"
+      invalid: "Invalid email/password combination"
+
+  entries:
+    form:
+      enter_title: "Please enter title"
+    new:
+      btn_create: "Create"
+      title: "New entry"
+    create:
+      entry_created: "created entry"
+    entries:
+      comment: "Comment"
+      confirm_delete: "Are you sure?"
+    destroy:
+      entry_deleted: "Deleted entry successfully"
+    client:
+      create: "Create"
+      enter_comment: "Enter..."
+      confirm_delete: "Are you sure?"
+    show:
+      title: "Entry"
+      create: "Create"
+      enter_comment: "Enter..."
+  follows:
+    unfollow:
+      unfollow: "Unfollow"
+    follow:
+      follow: "Follow"
+  comments:
+    create:
+      commented: "Comment successfully"
+      comment_failed: "Comment failed"

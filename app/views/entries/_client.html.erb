@@ -1,0 +1,71 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2" >
+  <div class="entries">
+  <% if @new_feed %>
+    <% @new_feed.each do |entry| %>
+      <span class="user-info"><%= link_to gravatar_for(entry.user,
+       size: Settings.gravatar_follow), entry.user %></span>
+      <span class="user"><%= link_to entry.user.name, entry.user %></span>
+      <span class="timestamp">
+        <% if current_user? entry.user %>
+          <%= link_to t(".delete"), entry, method: :delete,
+            data: {confirm: t(".confirm_delete")} %>
+        <% end %>
+        <%= t ".posted" %>
+        <%= time_ago_in_words entry.created_at %>
+        <%= t ".ago" %>
+      </span>
+      <span class="content">
+        <%= entry.title %>
+        <%= link_to image_tag(entry.picture.url), entry_path(entry) %>
+        <% unless entry.video_url.nil? %>
+          <%= video_tag entry.video_url.to_s, :controls =>true, size: "500x500" %>
+        <% end %>
+      </span>
+      <div class="panel-group" id="accordion" role="tablist"
+        aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion"
+                href="#collapseOne-<%= entry.id %>" aria-expanded="true"
+                  aria-controls="collapseOne">
+                <%= t ".comment" %>
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne-<%= entry.id %>" class="panel-collapse collapse in"
+            role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+               <% if entry.comments %>
+                  <% entry.comments.each do |comment| %>
+                    <% if comment.user %>
+                      <span><%= link_to gravatar_for(comment.user,
+                        size: Settings.gravatar_comment), comment.user %></span>
+                      <span><%= link_to comment.user.name, comment.user %></span>
+                    <% end %>
+                    <%= comment.content %><br/>
+                    <span class="timestamp">
+                      <%= time_ago_in_words comment.created_at %><br/>
+                    </span>
+                  <% end %>
+                <% end %>
+              <%= form_for entry.comments.build do |f| %>
+                <div class="field">
+                <%= f.hidden_field :id, value: entry.id %>
+                  <%= f.text_field :content, placeholder: t(".enter_comment"),
+                    class: "form-control" %>
+                </div>
+                <%= f.submit t(".create"), class: "btn btn-primary" %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br/><br/>
+    <% end %>
+    <%= will_paginate @new_feed %>
+    <% end %>
+    </div>
+  </div>
+</div>

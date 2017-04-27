@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <%= form_for @entry do |f| %>
+      <%= render "shared/error_messages", object: f.object %>
+      <% if session[:errors].nil? && session[:create_errors].any? %>
+        <div id="error-explanation">
+          <div class="alert alert-danger">
+            <%= t ".form_contains" %>
+            <%= pluralize session[:create_errors].count, t(".error") %>
+          </div>
+          <ul>
+            <% session[:create_errors].each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <div class="field">
+        <%= f.text_field :title, placeholder: t(".enter_title"),
+          class: "form-control" %>
+      </div>
+      <span class="picture">
+        <%= f.label :picture %>
+        <%= f.file_field :picture %>
+      </span>
+      <span class="picture">
+        <%= f.label :video %>
+        <%= f.file_field :video %>
+      </span>
+      <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

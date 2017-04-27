@@ -1,0 +1,13 @@
+<% provide :title, @user.name %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user-info">
+      <h1>
+        <%= @user.name %>
+      </h1>
+    </section>
+    <div class="col-md-8">
+    <%= render "follow_form" if logged_in? %>
+  </div>
+  </aside>
+</div>
