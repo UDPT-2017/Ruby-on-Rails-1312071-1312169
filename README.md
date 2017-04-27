@@ -1,12 +1,12 @@
-# Seminar-UDPT - *Tên đề tài*
+# Seminar-UDPT - RoR
 
-**Tên đề tài** là một repository trong đề tài tìm hiểu của lớp Ứng dụng phân tán.
+RoR là một repository trong đề tài tìm hiểu của lớp Ứng dụng phân tán.
 
 Thành viên:
-* [ ] **MSSV1** Tên sinh viên 1 (tên tài khoản github)
-* [ ] **MSSV2** Tên sinh viên 2 (tên tài khoản github)
+* [x] 1312071 Nguyễn Thị Diệu (1312071)
+* [x] 1312169 Nguyễn Mạnh Hải (Mango95)
 
-URL: **Link github page**
+URL: https://github.com/UDPT-2017/seminar-Ruby-on-Rails-1312071-1312169
 
 ## Yêu cầu
 
@@ -16,10 +16,10 @@ Yêu cầu **GIT**
 * [ ] Có sử dụng GIT.
 * [ ] Sử dụng GIT theo Centralized Workflow.
 * [ ] Sử dụng GIT theo Feature Branch Workflow.
-* [ ] Sử dụng GIT theo Gitflow Workflow.
+* [x] Sử dụng GIT theo Gitflow Workflow.
 
 Yêu cầu **bắt buộc**
-* [ ] Source code demo
+* [x] Source code demo
 * [ ] Slide thuyết trình
 * [ ] Tạo github page để viết lại báo cáo cho nội dung đề tài tìm hiểu
 
@@ -28,8 +28,15 @@ Các **nội dung lý thuyết** dự định tìm hiểu. Nhóm liệt kê các
 * [ ] Nội dung 2
 
 Các **chức năng của demo** đã thực hiện hoặc dự kiến thực hiện. Nhóm check vào các chức năng đã làm
-* [ ] Chức năng 1
-* [ ] Chức năng 2
+* [x] Đăng nhập, đăng xuất.
+* [x] Đăng nhập với Facebook
+* [x] Chỉnh sửa, show profile
+* [x] Đăng bài(ảnh và video)
+* [x] Share bài đăng lên Facebook
+* [x] Comment cho bài đăng.
+* [x] Follow/Unfollow user
+* [x] Xem những bài đăng gần đây nhất của những người mà user follow
+* [x] Đối với người dùng không đăng nhập, xem tất cả bài đăng và comment(không được phép comment).
 
 ## Demo
 

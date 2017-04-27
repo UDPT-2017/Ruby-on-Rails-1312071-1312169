@@ -8,9 +8,9 @@ class CommentsController < ApplicationController
     @comment.content = params[:comment][:content]
     @comment.entry_id = params[:comment][:id]
     if @comment.save
-      flash[:success] = t ".commented"
+      flash.now[:success] = t ".commented"
     else
-      flash[:danger] = t ".comment_failed"
+      flash.now[:danger] = t ".comment_failed"
     end
     redirect_to root_url
   end
