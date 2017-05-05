@@ -6,7 +6,8 @@ Thành viên:
 * [x] 1312071 Nguyễn Thị Diệu (1312071)
 * [x] 1312169 Nguyễn Mạnh Hải (Mango95)
 
-URL: https://github.com/UDPT-2017/seminar-Ruby-on-Rails-1312071-1312169
+URL: **Link github page**
+Link heroku: https://serene-beach-60811.herokuapp.com/
 
 ## Yêu cầu
 
@@ -20,12 +21,18 @@ Yêu cầu **GIT**
 
 Yêu cầu **bắt buộc**
 * [x] Source code demo
-* [ ] Slide thuyết trình
+* [x] Slide thuyết trình
 * [ ] Tạo github page để viết lại báo cáo cho nội dung đề tài tìm hiểu
 
 Các **nội dung lý thuyết** dự định tìm hiểu. Nhóm liệt kê các nội dung đã làm được vào bên dưới và check vào các nội dung đã tìm hiểu được.
-* [ ] Nội dung 1
-* [ ] Nội dung 2
+* [x] Giới thiệu về Ruby
+* [x] Giới thiệu về Rails
+* [x] Mô hình MVC trong Rails
+* [x] Model và Associations trong Rails
+* [x] Active Record
+* [x] Routing
+
+Link slide: https://1drv.ms/p/s!AlTT8n0KYO5WkhR-JhKgJCKcE7px
 
 Các **chức năng của demo** đã thực hiện hoặc dự kiến thực hiện. Nhóm check vào các chức năng đã làm
 * [x] Đăng nhập, đăng xuất.
@@ -42,7 +49,7 @@ Các **chức năng của demo** đã thực hiện hoặc dự kiến thực hi
 
 Link ảnh GIF demo ứng dụng:
 
-![Video Walkthrough](demo.gif)
+![Video Walkthrough](seminar.gif)
 
 Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 
