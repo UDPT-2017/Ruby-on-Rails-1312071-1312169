@@ -6,7 +6,8 @@ Thành viên:
 * [x] 1312071 Nguyễn Thị Diệu (1312071)
 * [x] 1312169 Nguyễn Mạnh Hải (Mango95)
 
-URL: **Link github page**
+URL: https://mango95.github.io/
+
 Link heroku: https://serene-beach-60811.herokuapp.com/
 
 ## Yêu cầu
@@ -22,7 +23,7 @@ Yêu cầu **GIT**
 Yêu cầu **bắt buộc**
 * [x] Source code demo
 * [x] Slide thuyết trình
-* [ ] Tạo github page để viết lại báo cáo cho nội dung đề tài tìm hiểu
+* [x] Tạo github page để viết lại báo cáo cho nội dung đề tài tìm hiểu
 
 Các **nội dung lý thuyết** dự định tìm hiểu. Nhóm liệt kê các nội dung đã làm được vào bên dưới và check vào các nội dung đã tìm hiểu được.
 * [x] Giới thiệu về Ruby
