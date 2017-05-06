@@ -1,0 +1,22 @@
+h1, h2, h3, h4, h5, h6, .formheaderTitle {
+    font-family: "Courier New", Courier;
+}
+h4 {
+	color: blue;
+}
+
+label {
+	padding-left: 10%;
+	text-align: right;
+	font-weight: normal;
+}
+
+.jumbotron {
+	background-color: #5cb85c;
+	text-align: center;
+}
+
+
+body {
+	background-image: url('../images/banner.jpg');
+}
