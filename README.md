@@ -6,8 +6,11 @@ Thành viên:
 * [x] 1312071 Nguyễn Thị Diệu (1312071)
 * [x] 1312169 Nguyễn Mạnh Hải (Mango95)
 
-URL: **Link github page**
+URL:
+
 Link heroku: https://serene-beach-60811.herokuapp.com/
+
+Link slide: https://1drv.ms/p/s!AlTT8n0KYO5WkhR-JhKgJCKcE7px
 
 ## Yêu cầu
 
@@ -23,8 +26,6 @@ Yêu cầu **bắt buộc**
 * [x] Source code demo
 * [x] Slide thuyết trình
 * [x] Tạo github page để viết lại báo cáo cho nội dung đề tài tìm hiểu
-
-Link slide: https://1drv.ms/p/s!AlTT8n0KYO5WkhR-JhKgJCKcE7px
 
 Các **nội dung lý thuyết** dự định tìm hiểu. Nhóm liệt kê các nội dung đã làm được vào bên dưới và check vào các nội dung đã tìm hiểu được.
 * [x] Giới thiệu về Ruby
