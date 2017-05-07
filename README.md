@@ -24,6 +24,8 @@ Yêu cầu **bắt buộc**
 * [x] Slide thuyết trình
 * [x] Tạo github page để viết lại báo cáo cho nội dung đề tài tìm hiểu
 
+Link slide: https://1drv.ms/p/s!AlTT8n0KYO5WkhR-JhKgJCKcE7px
+
 Các **nội dung lý thuyết** dự định tìm hiểu. Nhóm liệt kê các nội dung đã làm được vào bên dưới và check vào các nội dung đã tìm hiểu được.
 * [x] Giới thiệu về Ruby
 * [x] Giới thiệu về Rails
@@ -31,8 +33,6 @@ Các **nội dung lý thuyết** dự định tìm hiểu. Nhóm liệt kê các
 * [x] Model và Associations trong Rails
 * [x] Active Record
 * [x] Routing
-
-Link slide: https://1drv.ms/p/s!AlTT8n0KYO5WkhR-JhKgJCKcE7px
 
 Các **chức năng của demo** đã thực hiện hoặc dự kiến thực hiện. Nhóm check vào các chức năng đã làm
 * [x] Đăng nhập, đăng xuất.
