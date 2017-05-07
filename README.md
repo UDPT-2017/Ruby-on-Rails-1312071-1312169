@@ -6,7 +6,7 @@ Thành viên:
 * [x] 1312071 Nguyễn Thị Diệu (1312071)
 * [x] 1312169 Nguyễn Mạnh Hải (Mango95)
 
-URL:
+URL: https://udpt-2017.github.io/seminar-Ruby-on-Rails-1312071-1312169/
 
 Link heroku: https://serene-beach-60811.herokuapp.com/
 
